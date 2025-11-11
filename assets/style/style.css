@@ -78,6 +78,7 @@
 .h-33{
     height: 33.33% !important;
 }
+.bg-primary{background-color: var(--color-bg) !important}
 .hidden{
     opacity:0;
     line-height: 0;
@@ -159,7 +160,7 @@ a .btn-cta{
   background-image: url(../images/background-trees.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center -100% ;
+  background-position: center 100% ;
   position: fixed;
   bottom: 0;
   left: 0;
