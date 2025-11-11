@@ -1,0 +1,318 @@
+:root{
+    /* Colors */
+    --color-bg: #1a1e1d;
+    --color-text: #f2f5f4;
+    --color-text-muted: #a8a8a8;
+    --color-text-inverted: #1a1e1d;
+    --color-card: #232926;
+    --color-card-soft: #2f3532;
+    --color-card-glass: rgba(35, 41, 38, 0.25);
+    --color-card-semi-opaic: rgba(35, 41, 38, 0.65);
+    --color-accent: #E27227;
+    --color-accent-hover: #FFB36A;
+    --color-accent-active: #b45314;
+    --color-footer: #0c1818;
+
+    --color-mist: #bccdc5;
+    --color-hill-mid: #495e55;
+    --color-hill-deep: #23302c;
+    --color-moss: #6caa95;
+
+    /* Borders & Shadows */
+    --border-muted: rgba(255, 255, 255, 0.15);
+    --border-strong: rgba(255, 255, 255, 0.4);
+    --shadow-soft: rgba(0, 0, 0, 0.55);
+    --shadow-accent: rgba(226, 114, 39, 0.4);
+    --box-shadow: 0 6px 24px var(--shadow-soft);
+    --box-shadow-hover: 0 2px 8px var(--shadow-soft);
+    --box-shadow-active: inset 0 2px 5px var(--shadow-soft);
+    --card-blur: blur(6px);
+
+    /* Fonts */
+    --main-font: "Funnel Display", sans-serif;
+    --header-font: "Roboto Flex", sans-serif;
+}
+.rvh-100 {
+    height: calc(var(--real-vh, 1vh) * 100) !important;
+}
+.w-md-25{
+    width: 25% !important;
+}
+.w-md-33{
+    width: 33%;
+}
+.mw-15{min-width: 15%;}
+.mw-25{min-width: 25%;}
+.mw-33{min-width: 33%;}
+.vw-75{
+    width: 75vw;
+}
+.vw-100{
+    width:100vw;
+}
+.vw-md-25{
+    width: 25vw !important;
+}
+.vw-md-50{
+    width: 50vw !important;
+}
+.vw-md-75{
+    width: 75vw !important;
+}
+.vw-50{
+    width: 50vw;
+}
+.vh-10{
+    height: 10vh;
+}
+.vh-25{
+    height: 25vh;
+}
+.mx-a{
+    margin-left: auto;
+    margin-right: auto;
+}
+.pt-vh-10{
+    padding-top: 10vh !important;
+}
+.h-33{
+    height: 33.33% !important;
+}
+.hidden{
+    opacity:0;
+    line-height: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+.text-light{
+    color: var(--color-text) !important;
+}
+.text-decoration-none{
+    text-decoration: none !important;
+}
+.color-inherit{
+    color: inherit !important;
+}
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--main-font);
+}
+p{
+    color: var()
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+    font-weight: 600 !important;
+}
+a{color: var(--color-accent);}
+a .btn-cta{
+    color: var(--color-text);
+}
+.border-box{
+    box-sizing: border-box !important;
+}
+.cta-text{
+    position:relative;
+    color: var(--color-text-muted);
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+    z-index:999;
+}
+.cta-text:hover{
+    transition: color 0.5s ease-in-out;
+    color: var(--color-accent-hover);
+}
+.btn-cta{
+    cursor: pointer;
+    background-color: var(--color-accent);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.btn-cta:hover{
+    transform: translateY(-2px) !important;
+    background-color: var(--color-accent-hover);
+    color:var(--color-bg);
+    transition: color 0.3s ease-in-out,transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: var(--box-shadow-hover);
+}
+.btn-cta:active{
+    transform: translateY(1px) !important;
+    background-color: var(--color-accent-active);
+    transition: color 0s ease-in-out,transform 0s ease-in-out, background-color 0s ease-in-out, box-shadow 0s ease-in-out;
+    box-shadow: var(--box-shadow-active);
+    color: var(--color-card-soft);
+}
+.parallax-wrapper {
+  position: relative;
+}
+.main-content {
+  position: relative;
+  z-index: 50;
+  min-height: 200vh; /* to see the scroll effect */
+  padding: 2rem;
+  color: white;
+}
+.parallax-bg {
+  background-image: url(../images/background-trees.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center -100% ;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  z-index: 0;
+  transform: translateZ(0); /* helps with some flickering issues */
+}
+.accent{
+    color:var(--color-accent);
+}
+.accent-hover{
+    color: var(--color-text);
+    transition: color 0.5s ease-in-out;
+}
+.accent-hover:hover{
+    color: var(--color-accent) !important;
+    transition: color 0.3s ease-in-out;
+}
+.card{
+    color: var(--color-text);
+    background-color: var(--color-card-glass);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-muted);
+    backdrop-filter: var(--card-blur);
+    line-height: normal;
+    display:block;
+    transition: transform 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-bar{
+    height:100vh !important;
+    top:0;
+    position:fixed;
+    z-index: 1000;
+    background-color: var(--color-card-semi-opaic);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+.nav-bar, .nav-logo, .nav-links, .scrolled{
+    transition: width 0.3s ease-in-out, height 0.1s ease-in-out;
+}
+.nav-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.8s ease;
+}
+.nav-bar.scrolled{
+    background-color: var(--color-bg);
+    height: 10vh !important;
+    flex-direction: row !important;
+    transition: all 0.5s ease-in-out;
+}
+.nav-bar.scrolled .nav-links{flex-direction: row !important;}
+.nav-bar.scrolled .nav-logo{
+    width:10vw !important;
+}
+.nav-links{
+    flex-direction: column;
+    list-style:none;
+    white-space: nowrap;
+}
+.nav-links li{
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-mist);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-links li:hover{
+    background-color: var(--color-card-soft);
+    color: var(--color-accent-hover);
+    transform: translateY(-3px);
+}
+.nav-links li:active{
+    background-color: var(--color-hill-deep);
+    color: var(--color-accent);
+    transform: translateY(0px);
+    transition: transform 0s ease;
+}
+.nav-links a{
+    text-decoration: none !important;
+}
+.nav-bar.scrolled .nav-links{
+    flex-direction: row;
+}
+
+
+
+.client-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 60px;
+  color: var(--border-strong);
+  transition: color 0.9s ease-in-out;
+}
+.client-logo:hover{
+    color: var(--color-text);
+    transition: color 0.3s ease-in-out;
+}
+
+/* --------------------------------------
+    X.X - SERVICES.                    */
+.service-cta{
+    position: relative;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+.service-cta:hover{
+    transition: color 0.5s ease-in-out;
+    color: var(--color-accent-hover);
+}
+.service-cta.hidden{display:none;}
+.service-hidden{
+    transition: all 0.5s ease;
+}
+.service-hidden h3{color: var(--color-accent-hover);}
+/* ----------------------------------- */
+
+footer{
+    position:relative;
+    background-color:var(--color-footer);
+    min-height:25vh;
+    margin-top: -1rem;
+    z-index:900;
+}
+
+@media only screen and (max-width: 768px) {
+    .w-md-25{
+        width: inherit !important;
+    }
+    .vw-md-25{
+        width: inherit !important;
+    }
+    .vw-md-50{
+        width: inherit !important;
+    }
+    .vw-md-75{
+        width:inherit !important;
+    }
+    .nav-bar.scrolled .nav-logo{
+        width:15vw !important;
+    }
+    .nav-links li{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .parallax-bg{
+        background-position: center bottom;
+        background-size: 160% auto;
+    }
+}
