@@ -44,6 +44,7 @@
 .mw-15{min-width: 15%;}
 .mw-25{min-width: 25%;}
 .mw-33{min-width: 33%;}
+.w-33{width:33.33%;}
 .vw-75{
     width: 75vw;
 }
@@ -78,7 +79,16 @@
 .h-33{
     height: 33.33% !important;
 }
+.z-90{
+    Z-index:899;
+}
+.z-100{
+    z-index:999;
+}
 .bg-primary{background-color: var(--color-bg) !important}
+.list-style-item-inside{
+    list-style-position: inside !important;
+}
 .hidden{
     opacity:0;
     line-height: 0;
@@ -284,6 +294,17 @@ a .btn-cta{
 .service-hidden h3{color: var(--color-accent-hover);}
 /* ----------------------------------- */
 
+/* --------------------------------------
+    X.X - BIOTAPES PAGE                */
+#biotape-hero{
+    background-image:url(../images/biotapes-hero-section.png);
+    background-size:cover;
+    background-postion:center center;
+}
+/* ----------------------------------- */
+
+/* --------------------------------------
+    X.X - FOOTER. .                    */
 footer{
     position:relative;
     background-color:var(--color-footer);
