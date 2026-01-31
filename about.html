@@ -43,11 +43,11 @@
                     About Us
                 </li>
             </a>
-            <!-- <a href="">
+            <a href="./biotapes.html">
                 <li class="nav rounded-2 px-2 border-box m-md-3">
-                    The Blog
+                    Biotapes
                 </li>
-            </a> -->
+            </a>
             <a href="./contact.html">
                 <li class="nav rounded-2 px-2 border-box m-md-3">
                     Contact
@@ -58,15 +58,16 @@
     
     <div class="parallax-bg"></div>
     <!-- MAIN CONTENT STARTS -->
-    <div id="main-content" class="main-content container-fluid pt-vh-10">
+    <div id="main-content" class="main-content container-fluid pt-vh-10 px-md-0 px-3">
         <!-- SERVICES SECTION -->
         <section id="services-section" class="text-center collapse-holder mt-5 d-flex flex-column flex-md-row justify-content-center align-items-start">
             <!-- OUR STORY -->
             <div class="vw-100 vw-md-50 service-info d-flex flex-column align-items-center my-4 mx-2 ">
                 <h3>Our Story</h3>
-                <div class="w-100 card py-3 px-md-2">
+                <div class="w-100 card py-3 px-2">
                     <p>At Purpose Built, we believe in harnessing the power of storytelling to drive real-world change.</p>
-                    <p>Founded by Oliver Clague, a former wildlife television producer and cinematographer with over a decade of experience in high-end broadcast documentaries, our journey began with a desire to forge a new path.</p>
+                    <p>Founded by Oliver Clague and Adam Laister, wildlife and conservation filmmakers with over two combined decades of experience in high-end broadcast documentaries, our journey began with a desire to forge a new path.</p>
+                    <p>With degrees in Ecology and Environmental Science, Oliver and Adam wanted to utilise their knowledge and combined skill set to create films that inspire change - to tell the stories that do not fit into the usual TV remit.</p>
                     <p>During his career, Oliver worked with renowned networks like the BBC, Netflix and National Geographic, creating visually stunning content that captivated audiences.<br />
                     However, he realized that while television excels at entertaining, it often falls short in making a lasting impact. This growing awareness sparked a passion for deeper, purpose-driven storytelling - stories that don’t just entertain but inspire action and awareness.</p>
                     <p>Purpose Built began with a question: what if the kind of films that move people in cinemas could also move them to take action?</p>
@@ -80,12 +81,12 @@
             <div class="vw-100 vw-md-25 service-info d-flex flex-column align-items-center my-4 mx-2">
                 <h3>Meet the Team</h3>
                 <div class="card w-75 px-3 py-2 mb-4">
-                    <img class="w-100 rounded-pill" src="./assets/images/team-oliver-clague.avif" />
+                    <img class="service-image w-100 rounded-pill" src="./assets/images/team-oliver-clague.webp" />
                     <h5 class="accent-hover mt-2">Oliver Clague</h5>
                     <p>Founder & CEO</p>
                 </div>
                 <div class="card w-75 px-3 py-2 mb-4">
-                    <img class="w-100 rounded-pill" src="./assets/images/team-adam-laister.avif" />
+                    <img class="service-image w-100 rounded-pill" src="./assets/images/team-adam-laister.webp" />
                     <h5 class="accent-hover mt-2">Adam Laister</h5>
                     <p>Director of Photography</p>
                 </div>
@@ -353,6 +354,39 @@
     </footer>
 
     <!-- JAVASCRIPT -->
+    <!-- SERVICE SECTION IMAGE COLOURISATION -->
+    <script>
+        function updateImageFilters() {
+            const images = document.querySelectorAll('.service-image');
+            const viewportHeight = window.innerHeight;
+            const viewportCenter = viewportHeight / 2;
+
+            images.forEach(image => {
+            const rect = image.getBoundingClientRect();
+            const imageCenter = rect.top + rect.height / 2;
+
+            // Distance from the image's center to viewport center
+            const distance = Math.abs(viewportCenter - imageCenter);
+
+            // Normalize the distance (0 = center, 1 = far away)
+            const maxDistance = viewportHeight / 2; // half screen height
+            const normalized = Math.min(distance / maxDistance, 1);
+
+            // Invert so 1 = center, 0 = far
+            const closeness = 1 - normalized;
+
+            // Calculate filter values
+            const grayscale = 1 - closeness; // 1 at far, 0 at center
+            const saturate = 1 + (closeness * 1); // 1 at far, up to 2.5 at center
+
+            image.style.filter = `grayscale(${grayscale}) saturate(${saturate})`;
+            });
+        }
+
+        window.addEventListener('scroll', updateImageFilters);
+        window.addEventListener('resize', updateImageFilters);
+        document.addEventListener('DOMContentLoaded', updateImageFilters);
+    </script>
     <!-- BACKGROUND PARALLAX-->
     <script>
         const bg = document.querySelector('.parallax-bg');

@@ -2,7 +2,7 @@
 // contact.php
 
 // Set your email
-$to = "chalex.richer@gmail.com";
+$to = "adam@purposebuiltfilms.com, oliver@purposebuiltfilms.com";
 $fromemail = "no-reply@purposebuiltfilms.com";
 
 // Get POST data safely

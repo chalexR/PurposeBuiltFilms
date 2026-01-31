@@ -41,12 +41,18 @@
 .w-md-33{
     width: 33%;
 }
+.w-md-50{
+    width: 50% !important;
+}
+.w-md-75{
+    width: 75%;
+}
 .mw-15{min-width: 15%;}
 .mw-25{min-width: 25%;}
 .mw-33{min-width: 33%;}
 .w-33{width:33.33%;}
 .vw-75{
-    width: 75vw;
+    width: 75vw !important;
 }
 .vw-100{
     width:100vw;
@@ -74,7 +80,7 @@
     margin-right: auto;
 }
 .pt-vh-10{
-    padding-top: 10vh !important;
+    padding-top: 15vh !important;
 }
 .h-33{
     height: 33.33% !important;
@@ -222,7 +228,7 @@ a .btn-cta{
 }
 .nav-bar.scrolled{
     background-color: var(--color-bg);
-    height: 10vh !important;
+    height: 15vh !important;
     flex-direction: row !important;
     transition: all 0.5s ease-in-out;
 }
@@ -297,9 +303,9 @@ a .btn-cta{
 /* --------------------------------------
     X.X - BIOTAPES PAGE                */
 #biotape-hero{
-    background-image:url(../images/biotapes-hero-section.png);
+    background-image:url(../images/biotapes-hero-section.webp);
     background-size:cover;
-    background-postion:center center;
+    background-position:center center;
 }
 /* ----------------------------------- */
 
@@ -314,17 +320,25 @@ footer{
 }
 
 @media only screen and (max-width: 768px) {
+    .w-75{width: 75% !important;}
+    .w-100{width:100% !important;}
     .w-md-25{
         width: inherit !important;
+    }
+    .w-md-75{
+        width: auto !important;
     }
     .vw-md-25{
         width: inherit !important;
     }
     .vw-md-50{
-        width: inherit !important;
+        width:auto !important;
     }
     .vw-md-75{
-        width:inherit !important;
+        width: inherit !important;
+    }
+    .w-md-50{
+        width: auto !important;
     }
     .nav-bar.scrolled .nav-logo{
         width:15vw !important;

@@ -1,0 +1,23 @@
+{
+  "name": "purposebuiltfilms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fiveserver.config.js",
+  "scripts": {
+    "serve": "browser-sync start --proxy \"http://purposebuiltfilms.local\" --files \"**/*.php\" \"**/*.html\" \"assets/style/*.css\" --no-ui --no-notify --reload-delay 80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chalexR/PurposeBuiltFilms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chalexR/PurposeBuiltFilms/issues"
+  },
+  "homepage": "https://github.com/chalexR/PurposeBuiltFilms#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?biotapes\.org$ [NC]
+RewriteRule ^$ https://www.purposebuiltfilms.com/biotapes.html [L,R=301]
