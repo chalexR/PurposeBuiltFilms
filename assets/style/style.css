@@ -91,6 +91,9 @@
 .z-100{
     z-index:999;
 }
+.fs-9{
+    font-size: 0.85rem !important;
+}
 .bg-primary{background-color: var(--color-bg) !important}
 .list-style-item-inside{
     list-style-position: inside !important;
