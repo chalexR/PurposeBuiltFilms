@@ -1,3 +1,24 @@
+# ── Dev tooling ───────────────────────────────────────────────────────────────
+.vscode/
 fiveserver.config.js
-node_modules/*
-.vscode/*
+node_modules/
+package-lock.json
+
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ── Credentials / secrets (never commit) ──────────────────────────────────────
+*.env
+.env*
+*.pem
+*.key
+
+# ── XAMPP / local server ──────────────────────────────────────────────────────
+error_log
+*.log
