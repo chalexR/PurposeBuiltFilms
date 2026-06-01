@@ -4,54 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purpose Built Films - Pricing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- INCLUDE HEAD INFO -->
+    <?php include_once "./inc/head.php"; ?>
+
 </head>
 <body class="parallax-wrapper">
-    <!-- NAV BAR -->
-    <nav class="nav-bar w-100 vh-100 d-flex flex-nowrap flex-md-row flex-column align-items-center justify-content-center">
-
-        <!-- NAV LOGO -->
-        <div class="nav-logo w-100">
-            <img class="w-100" src="assets/images/purposebuiltfilms-logo.svg">
-        </div>
-
-        <!-- NAV LINKS -->
-        <ul class="nav-links flex-md-column flex-row m-md-0 my-2 ps-md-1 ps-0 mw-25 w-100 d-flex align-items-center justify-content-md-start justify-content-around">
-            <a href="./">
-                <li class="nav rounded-2 px-2 border-box m-md-3">
-                    Home
-                </li>
-            </a>
-            <a href="./services.html">
-                <li class="nav rounded-2 px-2 border-box m-md-3">
-                    Pricing
-                </li>
-            </a>
-            <a href="./about.html">
-                <li class="nav rounded-2 px-2 border-box m-md-3">
-                    About Us
-                </li>
-            </a>
-            <a href="./biotapes.html">
-                <li class="nav rounded-2 px-2 border-box m-md-3">
-                    Biotapes
-                </li>
-            </a>
-            <a href="./contact.html">
-                <li class="nav rounded-2 px-2 border-box m-md-3">
-                    Contact
-                </li>
-            </a>
-        </ul>
-    </nav>
+    
+    <!-- INCLUDE NAV BAR -->
+    <?php include_once "./inc/nav.php"; ?>
     
     <div class="parallax-bg"></div>
     <!-- MAIN CONTENT STARTS -->
@@ -238,42 +199,8 @@
         </section>
     </div>
 
-    <!-- FOOTER SECTION -->
-    <footer class="d-flex pt-3 flex-column flex-md-row">
-        <section class="flex-grow-1 flex-shrink-0 text-center align-items-start">
-            <ul class="list-unstyled">
-                <li><a href="./">Home</a></li>
-                <li><a href="./services.html">Pricing</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./contact.html#faq-section">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </section>
-        <section class="flex-grow-1 flex-shrink-1 text-center">
-            <p class="small text-center mb-3">
-                &copy; 2025 Purpose Built Films.<br />
-                All rights reserved.
-            </p>
-            <p>
-                Web design by <a href="https://freshpour.uk" target="_blank" rel="noopener noreferrer">freshpour.uk</a>
-            </p>
-        </section>
-        <section class="flex-grow-1 flex-shrink-1 text-center text-md-start">
-            <h4>Quick Contact</h4>
-            <p class="accent-hover">
-                <i class="fa-solid fa-inbox me-2"></i><a class="color-inherit" href="mailto:info@purposebuiltfilms.com">info@purposebuiltfilms.com</a>
-            </p>
-            <p class="accent-hover">
-                <i class="fa-solid fa-phone me-2"></i><a class="color-inherit" href="tel: +447743016580">+447743016580</a>
-            </p>
-            <p class="accent-hover">
-                <i class="fa-solid fa-calendar-days me-2"></i><a class="color-inherit" href="https://calendly.com/purposebuiltfilms/30min" target="_blank">Book a Discovery Call</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-whatsapp me-2"></i><a class="accent-hover" href="https://wa.me/447743016580?text=I%20want%20to%20know%20more%20about%20Purpose%20Built%20Films" target="_blank">Whatsapp</a>
-            </p>
-        </section>
-    </footer>
+    <!-- INCLUDE FOOTER FILE -->
+    <?php include_once "./inc/footer.php"; ?> 
 
     <!-- JAVASCRIPT -->
     <!-- BACKGROUND PARALLAX-->
