@@ -3,18 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purpose Built Films - Contact and FAQ</title>
-    
+    <title>Contact &amp; FAQ — Purpose Built Films | Rewilding Film Production, Bristol South West</title>
+    <meta name="description" content="Get in touch with Purpose Built Films — rewilding and nature documentary filmmakers based in Bristol, South West England. Book a free discovery call or send us a message about your conservation project.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://purposebuiltfilms.com/contact.php">
+    <meta property="og:title" content="Contact &amp; FAQ — Purpose Built Films | Rewilding Film Production, Bristol">
+    <meta property="og:description" content="Book a free discovery call with Bristol's rewilding and nature documentary filmmakers. Serving conservation charities and land managers across the South West and UK.">
+    <meta property="og:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Purpose Built Films">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — Purpose Built Films | Rewilding Filmmakers, Bristol">
+    <meta name="twitter:description" content="Book a free discovery call with Bristol's rewilding and nature documentary filmmakers. South West England and UK-wide.">
+    <meta name="twitter:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+
     <!-- INCLUDE HEAD INFO -->
     <?php include_once "./inc/head.php"; ?>
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do we get started?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Just drop us a message at info@purposebuiltfilms.com or fill out our contact form. We'll set up a call to learn about your goals and map out your project from there."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you really film a documentary in one day?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We have over 25 years of experience working in high-end broadcast TV and on-demand documentaries. We work efficiently while leaving room for authentic moments."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does a film cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing depends on your needs, scale, and the complexity of the shoot. Generally, a film can start at around £1,500 + VAT. Contact us for a quick quote."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does the video production process take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depending on the project, most videos are turned around in 2-6 weeks. Micro-content is usually even quicker."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes Purpose Built Films different from other video companies?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We focus on real stories and authentic emotion — using real people, not actors, and honest moments over scripts. Our team has backgrounds in high-end broadcast documentary production for BBC, Netflix, and National Geographic."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you work with small businesses or only big brands?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both. We love working with passionate startups as much as established brands. If you have a story to tell, we want to help share it."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="parallax-wrapper">
 
@@ -54,7 +119,7 @@
                     <i class="fa-solid fa-inbox me-2"></i><a class="color-inherit" href="mailto:info@purposebuiltfilms.com">info@purposebuiltfilms.com</a>
                 </p>
                 <p class="accent-hover">
-                    <i class="fa-solid fa-phone me-2"></i><a class="color-inherit" href="tel: +447743016580">+447743016580</a>
+                    <i class="fa-solid fa-phone me-2"></i><a class="color-inherit" href="tel: +447958646101">+447958646101</a>
                 </p>
                 <p class="accent-hover">
                     <i class="fa-solid fa-calendar-days me-2"></i><a class="color-inherit" href="https://calendly.com/purposebuiltfilms/30min" target="_blank">Book a Discovery Call</a>
@@ -62,28 +127,28 @@
                 <ul class="list-unstyled">
                     Connect with us on:
                     <li>
-                        <a class="accent-hover text-decoration-none" href="https://wa.me/447743016580?text=I%20want%20to%20know%20more%20about%20Purpose%20Built%20Films" target="_blank">
+                        <a class="accent-hover text-decoration-none" href="https://wa.me/447958646101?text=I%20want%20to%20know%20more%20about%20Purpose%20Built%20Films" target="_blank">
                             <i class="fa-brands fa-whatsapp me-2"></i>Whatsapp
                         </a>
                     </li>
                     <li>
-                        <a class="accent-hover text-decoration-none" href="https://www.facebook.com/wix" target="_blank">
+                        <a class="accent-hover text-decoration-none" href="https://www.facebook.com/purposebuiltfilms" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-facebook me-2"></i>Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="accent-hover text-decoration-none" href="https://www.twitter.com/wix" target="_blank">
-                            <i class="fa-brands fa-x-twitter me-2"></i>Twitter
-                        </a>    
-                    </li>
-                    <li>
-                        <a class="accent-hover text-decoration-none" href="https://www.linkedin.com/company/wix-com" target="_blank">
+                        <a class="accent-hover text-decoration-none" href="https://www.linkedin.com/company/purposebuiltfilms" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a class="accent-hover text-decoration-none" href="https://www.instagram.com/wix" target="_blank">
+                        <a class="accent-hover text-decoration-none" href="https://www.instagram.com/purposebuiltfilms/" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-instagram me-2"></i>Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="accent-hover text-decoration-none" href="https://www.youtube.com/@purposebuiltfilms" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube me-2"></i>YouTube
                         </a>
                     </li>
                 </ul>
@@ -183,8 +248,8 @@
                     </div>
                     <div class="card service-hidden hidden w-100 vw-md-75 px-2 py-2 mx-md-5 mx-0 rounded-3 text-md-start text-center">
                         <h3 class="w-100">Can you help with ideas if we’re not sure what we want?</h3>
-                        <p>Our founder, Oliver, has worked in development with some of the biggest names in TV</p>
-                        <p>His super power is turning ideas (however vague) into emotional, visually stunning stories. Book a free ideas call to discuss.</p> 
+                        <p>Our founder, Adam, has worked in development with some of the biggest names in TV</p>
+                        <p>His super power is turning ideas (however vague) into emotional, visually stunning stories. Book a free ideas call to discuss.</p>
                     </div>
                 </li>
                 <li class="service-info d-flex flex-column align-items-center my-3">
@@ -201,139 +266,7 @@
     </div>
 
     <!-- INCLUDE FOOTER FILE -->
-    <?php include_once "./inc/footer.php"; ?> 
-
-    <!-- JAVASCRIPT -->
-    <script>
-    document.getElementById("contact-form").addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        const form = e.target;
-        const formData = new FormData(form);
-        const responseBox = document.getElementById("form-response");
-        responseBox.innerHTML = "<div class='alert alert-info'>Sending...</div>";
-
-        try {
-            const response = await fetch(form.action, {
-                method: "POST",
-                body: formData
-            });
-            //console.log(response);
-            const result = await response.json();
-
-            if (result.success) {
-                responseBox.innerHTML = `<div class='alert alert-success'>${result.message}</div>`;
-                form.reset();
-            } else {
-                responseBox.innerHTML = `<div class='alert alert-danger'>${result.message}</div>`;
-            }
-
-        } catch (error) {
-            responseBox.innerHTML = "<div class='alert alert-danger'>An unexpected error occurred.</div>";
-            console.error(error);
-        }
-    });
-    </script>
-    <!-- BACKGROUND PARALLAX-->
-    <script>
-        const bg = document.querySelector('.parallax-bg');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const offset = scrollY * 0.15; // Adjust speed here (0.1 = slow, 1 = fast)
-            bg.style.transform = `translateY(${offset}px)`;
-        });
-    </script>
-    <!-- NAV BAR & HERO SCROLL BEHAVIOUR -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Detect internal vs external navigation ---
-            const referrer = document.referrer;
-            let isInternal = false;
-            try {
-                if (referrer) {
-                    isInternal = new URL(referrer).origin === location.origin;
-                }
-            } catch (error) {
-                console.warn("Could not parse referrer:", error);
-            }
-
-            // --- Element references ---
-            const navBar = document.querySelector('.nav-bar');
-            const heroShrink = document.querySelectorAll('.hero-shrink');
-            let lastScrollTop = 0;
-
-            // --- Core scroll handler ---
-            function handleScroll() {
-                const windowHeight = window.innerHeight;
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                // 🔹 HERO SHRINK EFFECT
-                let scrollPercent = 100 - ((scrollTop / windowHeight) * 600) + 85;
-                scrollPercent = Math.max(0, Math.min(100, scrollPercent));
-
-                heroShrink.forEach((hero) => {
-                    hero.style.fontSize = `${scrollPercent}%`;
-                    hero.style.opacity = `${scrollPercent}%`;
-                });
-
-                // 🔹 NAVBAR SCROLLED CLASS
-                if (scrollTop > 20 || isInternal) {
-                    navBar.classList.add('scrolled');
-                } else {
-                    navBar.classList.remove('scrolled');
-                }
-
-                // 🔹 NAVBAR HIDE / SHOW ON SCROLL DIRECTION
-                if (scrollTop > 100) {
-                    if (scrollTop > lastScrollTop) {
-                        // Scrolling down
-                        navBar.classList.add('nav-hidden');
-                    } else {
-                        // Scrolling up
-                        navBar.classList.remove('nav-hidden');
-                    }
-                } else {
-                    // Always show near the top
-                    navBar.classList.remove('nav-hidden');
-                }
-
-                lastScrollTop = Math.max(0, scrollTop);
-            }
-
-            // --- Run once on load + on scroll ---
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-        });
-    </script>
-    <!-- COLLAPSIBLE BOX BEHAVIOUR -->
-    <script>
-        const serviceCta = document.querySelectorAll('.service-cta');
-
-        serviceCta.forEach(cta => {
-            cta.addEventListener('click', e => {
-                // optional: if .service-cta is a link and you don't want navigation
-                e.preventDefault();
-
-                // find the container (scoped area) that groups these service items
-                const container = cta.closest('.collapse-holder') || document;
-
-                // 1) Close all items in the same container
-                const allButtons = container.querySelectorAll('.service-cta');
-                const allHolders = container.querySelectorAll('.service-hidden');
-
-                allButtons.forEach(btn => btn.classList.remove('hidden'));     // show all CTAs
-                allHolders.forEach(holder => holder.classList.add('hidden'));  // hide all hidden sections
-
-                // 2) Open the clicked one
-                const parentLi = cta.closest('.service-info');
-                const hiddenSection = parentLi?.querySelector('.service-hidden');
-                if (hiddenSection) {
-                hiddenSection.classList.remove('hidden'); // show this one
-                cta.classList.add('hidden');              // hide its CTA if that's desired
-                }
-            });
-        });
-    </script>
-</body>
+    <?php include_once "./inc/footer.php"; ?>
+    <script src="/assets/js/contact.js"></script>
+    </body>
 </html>

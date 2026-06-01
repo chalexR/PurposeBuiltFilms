@@ -3,20 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purpose Built Films - Independent film producers with global ambitions</title>
-    
+    <title>Purpose Built Films — Rewilding &amp; Nature Documentary Filmmakers | Bristol, South West</title>
+    <meta name="description" content="Bristol-based rewilding and nature documentary filmmakers. Purpose Built Films creates cinematic films for conservation charities, rewilding projects, and purpose-led brands across the South West and beyond.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://purposebuiltfilms.com/">
+    <meta property="og:title" content="Purpose Built Films — Rewilding &amp; Nature Documentary Filmmakers | Bristol, South West">
+    <meta property="og:description" content="Bristol-based rewilding and nature documentary filmmakers. Cinematic storytelling for conservation charities, rewilding projects, and purpose-led brands across the South West and UK.">
+    <meta property="og:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Purpose Built Films">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Purpose Built Films — Rewilding &amp; Nature Documentary Filmmakers | Bristol">
+    <meta name="twitter:description" content="Bristol-based rewilding and nature documentary filmmakers. Cinematic storytelling for conservation, rewilding, and purpose-driven brands across the South West.">
+    <meta name="twitter:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+
     <!-- INCLUDE HEAD INFO -->
     <?php include_once "./inc/head.php"; ?>
 
-    <!-- STOP JERKING ON iOS SCROLL -->
-    <script>
-        // Only set --real-vh on mobile devices once on load
-        window.addEventListener('load', () => {
-        if (window.innerWidth <= 768) { // adjust breakpoint if needed
-            const vh = window.screen.height * 0.01;
-            document.documentElement.style.setProperty('--real-vh', `${vh}px`);
-        }
-        });
+    <!-- JSON-LD: Organization + LocalBusiness + Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": ["Organization", "LocalBusiness"],
+                "@id": "https://purposebuiltfilms.com/#organization",
+                "name": "Purpose Built Films",
+                "url": "https://purposebuiltfilms.com",
+                "logo": "https://purposebuiltfilms.com/assets/images/logo.png",
+                "description": "Conservation and wildlife documentary filmmakers creating cinematic stories for charities, brands, and purpose-driven organisations.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bristol",
+                    "addressCountry": "GB"
+                },
+                "telephone": "+447958646101",
+                "email": "info@purposebuiltfilms.com",
+                "sameAs": [
+                    "https://www.facebook.com/purposebuiltfilms",
+                    "https://www.linkedin.com/company/purposebuiltfilms",
+                    "https://www.instagram.com/purposebuiltfilms/",
+                    "https://www.youtube.com/@purposebuiltfilms"
+                ],
+                "founder": {
+                    "@type": "Person",
+                    "@id": "https://purposebuiltfilms.com/about#adam-laister",
+                    "name": "Adam Laister",
+                    "jobTitle": "Founder and Director of Photography",
+                    "description": "Wildlife and conservation filmmaker with 10 years of experience in high-end broadcast documentaries, including productions for BBC, Netflix, and National Geographic.",
+                    "worksFor": {"@id": "https://purposebuiltfilms.com/#organization"},
+                    "sameAs": [
+                        "https://www.linkedin.com/in/adam-laister-48551331/",
+                        "https://www.instagram.com/purposebuiltfilms/"
+                    ]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://purposebuiltfilms.com/#website",
+                "url": "https://purposebuiltfilms.com",
+                "name": "Purpose Built Films",
+                "publisher": {"@id": "https://purposebuiltfilms.com/#organization"}
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Purpose Built Films Showreel — Rewilding and Nature Documentary Filmmakers, Bristol",
+                "description": "Showreel from Purpose Built Films, Bristol-based rewilding and nature documentary filmmakers. Cinematic storytelling for conservation charities, rewilding projects, and purpose-led brands across the South West.",
+                "contentUrl": "https://www.youtube.com/watch?v=NobAg6yFsBE",
+                "embedUrl": "https://www.youtube.com/embed/NobAg6yFsBE",
+                "uploadDate": "2025-01-01",
+                "publisher": {"@id": "https://purposebuiltfilms.com/#organization"}
+            }
+        ]
+    }
     </script>
 </head>
 <body class="parallax-wrapper">
@@ -49,9 +111,16 @@
                 </div>
                 <div class="row h-33 d-flex align-items-center text-center">
                     <div class="col-12">
+                        <h1 class="visually-hidden">Rewilding and Nature Documentary Filmmakers — Purpose Built Films, Bristol, South West England</h1>
                         <h2 class="w-100 fs-1"><span class="hero-shrink">Stories with </span><span class="accent">Purpose</span></h2>
                         <h2 class="w-100 fs-1"><span class="accent">Built</span><span class="hero-shrink"> to Last</span></h2>
                         <a href="https://calendly.com/purposebuiltfilms/30min" target="_blank"><div class="d-inline-block btn-cta rounded-4 p-2 px-4 mt-5">Book a Discovery Call</div></a>
+                        <div class="mt-4">
+                            <button class="showreel-play-btn" data-bs-toggle="modal" data-bs-target="#showreelModal" aria-label="Watch our showreel">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="small mt-2 text-white" style="opacity:0.8;letter-spacing:0.1em;text-transform:uppercase;font-size:0.75rem;">Watch Showreel</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row h-33 d-flex align-items-end">
@@ -237,7 +306,7 @@
 
             <!-- CLIENTS CTA -->
             <div class="text-center m-3">
-                <a href="./about.html">
+                <a href="./about.php">
                     <span class="btn-cta rounded-4 d-inline-block p-2 px-4 fs-5">Find out how we work...</span>
                 </a>
             </div>
@@ -253,7 +322,7 @@
                 <div class="d-flex flex-column flex-md-row align-items-center card service-info mx-auto vw-md-75 vw-100 my-4">
                     <div class="col-12 col-md-4 pt-2">
                         <h3>Short Films</h3>
-                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-short-film.webp" />
+                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-short-film.webp" alt="Rewilding and nature short film production for conservation charities in Bristol and the South West" />
                     </div>
                     <div class="col-12 col-md-8 mt-2 text-start px-1 px-md-0 text-center text-md-start">
                         At Purpose Built Films, our short films are designed to do one thing beautifully: tell a powerful story in a small, intentional space. Whether you are restoring a wetland, reintroducing species, or building a circular product, a short film lets people see the impact, not just read about it. We capture real people, real places, and real change, with an emphasis on working lightly on the land and showcasing sustainable practice on screen.
@@ -268,7 +337,7 @@
                 <div class="d-flex flex-column flex-md-row align-items-center card service-info mx-auto vw-md-75 vw-100 my-4">
                     <div class="col-12 col-md-4 pt-2">
                         <h3>CEO Branding</h3>
-                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-ceo-branding.webp" />
+                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-ceo-branding.webp" alt="CEO and founder branding films for rewilding organisations and conservation charities, Bristol" />
                     </div>
                     <div class="col-12 col-md-8 mt-2 text-start px-1 px-md-0 text-center text-md-start">
                         Purpose-led organisations are powered by people, and often the clearest story sits with the person at the top. Our CEO Branding films give your leadership a confident, human voice on camera. We create short, high-quality pieces that introduce who you are, what you believe, and why this work matters now. It is not corporate gloss; it is clear, grounded storytelling that helps partners, funders, and audiences trust you.
@@ -283,7 +352,7 @@
                 <div class="d-flex flex-column flex-md-row align-items-center card service-info mx-auto vw-md-75 vw-100 my-4">
                     <div class="col-12 col-md-4 pt-2">
                         <h3>Monthly Content</h3>
-                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-monthly-content.webp" />
+                        <img class="service-image img-fluid w-75 rounded-3 m-2" src="./assets/images/service-monthly-content.webp" alt="Monthly nature and rewilding video content packages for charities and land managers, South West England" />
                     </div>
                     <div class="col-12 col-md-8 mt-2 text-start px-1 px-md-0 text-center text-md-start">
                         Some stories do not happen in one day on set. Restoration projects, community programmes, new product cycles – they all evolve over time. Our Monthly Content Packages are designed to keep telling that story as it unfolds. Instead of commissioning a single big film once a year, you get a steady stream of short, on-brand content you can share with stakeholders, funders, and your online audience every month.
@@ -316,7 +385,7 @@
 
             <!-- CLIENT CTA -->
             <div class="text-center m-3">
-                <a href="./contact.html">
+                <a href="./contact.php">
                     <span class="btn-cta rounded-4 d-inline-block p-2 px-4 fs-5">Build Something with Purpose...</span>
                 </a>
             </div>
@@ -325,142 +394,30 @@
     </div>
     
     <!-- INCLUDE FOOTER FILE -->
-    <?php include_once "./inc/footer.php"; ?> 
-
-    <!-- JAVASCRIPT -->
-    <!-- BACKGROUND PARALLAX-->
-    <script>
-        const bg = document.querySelector('.parallax-bg');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const offset = scrollY * 0.15; // Adjust speed here (0.1 = slow, 1 = fast)
-            bg.style.transform = `translateY(${offset}px)`;
-        });
-    </script>
-    <!-- NAV BAR & HERO SCROLL BEHAVIOUR -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Detect internal vs external navigation ---
-            const referrer = document.referrer;
-            let isInternal = false;
-            try {
-                if (referrer) {
-                    isInternal = new URL(referrer).origin === location.origin;
-                }
-            } catch (error) {
-                console.warn("Could not parse referrer:", error);
-            }
-
-            // --- Element references ---
-            const navBar = document.querySelector('.nav-bar');
-            const heroShrink = document.querySelectorAll('.hero-shrink');
-            let lastScrollTop = 0;
-
-            // --- Core scroll handler ---
-            function handleScroll() {
-                const windowHeight = window.innerHeight;
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                // 🔹 HERO SHRINK EFFECT
-                let scrollPercent = 100 - ((scrollTop / windowHeight) * 600) + 85;
-                scrollPercent = Math.max(0, Math.min(100, scrollPercent));
-
-                heroShrink.forEach((hero) => {
-                    hero.style.fontSize = `${scrollPercent}%`;
-                    hero.style.opacity = `${scrollPercent}%`;
-                });
-
-                // 🔹 NAVBAR SCROLLED CLASS
-                if (scrollTop > 20 || isInternal) {
-                    navBar.classList.add('scrolled');
-                } else {
-                    navBar.classList.remove('scrolled');
-                }
-
-                // 🔹 NAVBAR HIDE / SHOW ON SCROLL DIRECTION
-                if (scrollTop > 100) {
-                    if (scrollTop > lastScrollTop) {
-                        // Scrolling down
-                        navBar.classList.add('nav-hidden');
-                    } else {
-                        // Scrolling up
-                        navBar.classList.remove('nav-hidden');
-                    }
-                } else {
-                    // Always show near the top
-                    navBar.classList.remove('nav-hidden');
-                }
-
-                lastScrollTop = Math.max(0, scrollTop);
-            }
-
-            // --- Run once on load + on scroll ---
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-        });
-    </script>
-    <!-- SERVICE SECTION IMAGE COLOURISATION -->
-    <script>
-        function updateImageFilters() {
-            const images = document.querySelectorAll('.service-image');
-            const viewportHeight = window.innerHeight;
-            const viewportCenter = viewportHeight / 2;
-
-            images.forEach(image => {
-            const rect = image.getBoundingClientRect();
-            const imageCenter = rect.top + rect.height / 2;
-
-            // Distance from the image's center to viewport center
-            const distance = Math.abs(viewportCenter - imageCenter);
-
-            // Normalize the distance (0 = center, 1 = far away)
-            const maxDistance = viewportHeight / 2; // half screen height
-            const normalized = Math.min(distance / maxDistance, 1);
-
-            // Invert so 1 = center, 0 = far
-            const closeness = 1 - normalized;
-
-            // Calculate filter values
-            const grayscale = 1 - closeness; // 1 at far, 0 at center
-            const saturate = 1 + (closeness * 1); // 1 at far, up to 2.5 at center
-
-            image.style.filter = `grayscale(${grayscale}) saturate(${saturate})`;
-            });
-        }
-
-        window.addEventListener('scroll', updateImageFilters);
-        window.addEventListener('resize', updateImageFilters);
-        document.addEventListener('DOMContentLoaded', updateImageFilters);
-    </script>
-    <!-- COLLAPSIBLE BOX BEHAVIOUR -->
-    <script>
-        const serviceCta = document.querySelectorAll('.service-cta');
-
-        serviceCta.forEach(cta => {
-            cta.addEventListener('click', e => {
-                // optional: if .service-cta is a link and you don't want navigation
-                e.preventDefault();
-
-                // find the container (scoped area) that groups these service items
-                const container = cta.closest('.collapse-holder') || document;
-
-                // 1) Close all items in the same container
-                const allButtons = container.querySelectorAll('.service-cta');
-                const allHolders = container.querySelectorAll('.service-hidden');
-
-                allButtons.forEach(btn => btn.classList.remove('hidden'));     // show all CTAs
-                allHolders.forEach(holder => holder.classList.add('hidden'));  // hide all hidden sections
-
-                // 2) Open the clicked one
-                const parentLi = cta.closest('.service-info');
-                const hiddenSection = parentLi?.querySelector('.service-hidden');
-                if (hiddenSection) {
-                hiddenSection.classList.remove('hidden'); // show this one
-                cta.classList.add('hidden');              // hide its CTA if that's desired
-                }
-            });
-        });
-    </script>
+    <?php include_once "./inc/footer.php"; ?>
+    
+    <!-- SHOWREEL MODAL -->
+    <div class="modal fade" id="showreelModal" tabindex="-1" aria-label="Purpose Built Films Showreel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 p-md-3 pt-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            id="showreelIframe"
+                            src=""
+                            data-src="https://www.youtube.com/embed/NobAg6yFsBE?autoplay=1&rel=0"
+                            title="Purpose Built Films Showreel — Rewilding and Nature Documentary Filmmakers, Bristol"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/showreel.js"></script>
 </body>
 </html>

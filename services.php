@@ -3,10 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purpose Built Films - Pricing</title>
+    <title>Pricing — Purpose Built Films | Rewilding &amp; Nature Film Production, Bristol South West</title>
+    <meta name="description" content="Transparent rewilding and nature documentary film pricing from Bristol. Packages from £1,500 for short conservation films to £6,000+ for full series. Serving charities and land managers across the South West.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://purposebuiltfilms.com/services.php">
+    <meta property="og:title" content="Pricing — Purpose Built Films | Rewilding &amp; Nature Film Production, Bristol">
+    <meta property="og:description" content="Transparent rewilding and nature film pricing from £1,500. Short films, CEO branding, monthly content. Bristol-based, working across the South West and UK.">
+    <meta property="og:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Purpose Built Films">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pricing — Rewilding &amp; Nature Film Production | Purpose Built Films, Bristol">
+    <meta name="twitter:description" content="Nature and rewilding documentary film pricing from £1,500. Bristol-based, South West England. Conservation charities, land managers, purpose-led brands.">
+    <meta name="twitter:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
 
     <!-- INCLUDE HEAD INFO -->
     <?php include_once "./inc/head.php"; ?>
+
+    <!-- JSON-LD: Service offerings -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "Sprout — Short Documentary Film",
+                "description": "Entry-level cinematic documentary. A 3-minute story-driven film ideal for charities, conservation organisations, and brands.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "GBP",
+                    "price": "1500",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "description": "Starting at £1,500 + VAT, 2-3 week delivery"
+                    }
+                },
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Purpose Built Films",
+                    "url": "https://purposebuiltfilms.com"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Wild Meadow — Extended Documentary",
+                "description": "5-10 minute cinematic documentary with richer storytelling, multiple filming days, and comprehensive post-production.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "GBP",
+                    "price": "2000",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "description": "Starting at £2,000 + VAT, 5-6 week delivery"
+                    }
+                },
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Purpose Built Films",
+                    "url": "https://purposebuiltfilms.com"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Ancient Forest — Documentary Series",
+                "description": "A series of three 5-10 minute cinematic documentaries for extensive multi-narrative projects.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "GBP",
+                    "price": "6000",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "description": "Starting at £6,000 + VAT, 10-12 week production"
+                    }
+                },
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Purpose Built Films",
+                    "url": "https://purposebuiltfilms.com"
+                }
+            }
+        ]
+    }
+    </script>
 
 </head>
 <body class="parallax-wrapper">
@@ -169,25 +250,6 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="service-hidden hidden vw-md-50 w-100 px-md-5 py-2 mx-5 mt-3 mt-md-0">
-                        <p class="fs-5">Starting at £6,000 +. VAT</p>
-                        <p>10-12 weeks for full series production.</p>
-                        <ul class="d-inline">
-                            <span class="accent fs-6">Includes:</span><br/>
-                            <li class="d-inline">
-                                Full strategic consultation and multi-story planning
-                            </li><br />
-                            <li class="d-inline">
-                                Up to five days of filming
-                            </li><br />
-                            <li class="d-inline">
-                                Enhanced editing with custom graphics and effects
-                            </li><br />
-                            <li class="d-inline">
-                                Final delivery of films along with tailored engagement strategy
-                            </li>
-                        </ul>
-                    </div>
                 </li>
             </ul>
 
@@ -200,109 +262,6 @@
     </div>
 
     <!-- INCLUDE FOOTER FILE -->
-    <?php include_once "./inc/footer.php"; ?> 
-
-    <!-- JAVASCRIPT -->
-    <!-- BACKGROUND PARALLAX-->
-    <script>
-        const bg = document.querySelector('.parallax-bg');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const offset = scrollY * 0.15; // Adjust speed here (0.1 = slow, 1 = fast)
-            bg.style.transform = `translateY(${offset}px)`;
-        });
-    </script>
-    <!-- NAV BAR & HERO SCROLL BEHAVIOUR -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Detect internal vs external navigation ---
-            const referrer = document.referrer;
-            let isInternal = false;
-            try {
-                if (referrer) {
-                    isInternal = new URL(referrer).origin === location.origin;
-                }
-            } catch (error) {
-                console.warn("Could not parse referrer:", error);
-            }
-
-            // --- Element references ---
-            const navBar = document.querySelector('.nav-bar');
-            const heroShrink = document.querySelectorAll('.hero-shrink');
-            let lastScrollTop = 0;
-
-            // --- Core scroll handler ---
-            function handleScroll() {
-                const windowHeight = window.innerHeight;
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                // 🔹 HERO SHRINK EFFECT
-                let scrollPercent = 100 - ((scrollTop / windowHeight) * 600) + 85;
-                scrollPercent = Math.max(0, Math.min(100, scrollPercent));
-
-                heroShrink.forEach((hero) => {
-                    hero.style.fontSize = `${scrollPercent}%`;
-                    hero.style.opacity = `${scrollPercent}%`;
-                });
-
-                // 🔹 NAVBAR SCROLLED CLASS
-                if (scrollTop > 20 || isInternal) {
-                    navBar.classList.add('scrolled');
-                } else {
-                    navBar.classList.remove('scrolled');
-                }
-
-                // 🔹 NAVBAR HIDE / SHOW ON SCROLL DIRECTION
-                if (scrollTop > 100) {
-                    if (scrollTop > lastScrollTop) {
-                        // Scrolling down
-                        navBar.classList.add('nav-hidden');
-                    } else {
-                        // Scrolling up
-                        navBar.classList.remove('nav-hidden');
-                    }
-                } else {
-                    // Always show near the top
-                    navBar.classList.remove('nav-hidden');
-                }
-
-                lastScrollTop = Math.max(0, scrollTop);
-            }
-
-            // --- Run once on load + on scroll ---
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-        });
-    </script>
-    <!-- COLLAPSIBLE BOX BEHAVIOUR -->
-    <script>
-        const serviceCta = document.querySelectorAll('.service-cta');
-
-        serviceCta.forEach(cta => {
-            cta.addEventListener('click', e => {
-                // optional: if .service-cta is a link and you don't want navigation
-                e.preventDefault();
-
-                // find the container (scoped area) that groups these service items
-                const container = cta.closest('.collapse-holder') || document;
-
-                // 1) Close all items in the same container
-                const allButtons = container.querySelectorAll('.service-cta');
-                const allHolders = container.querySelectorAll('.service-hidden');
-
-                allButtons.forEach(btn => btn.classList.remove('hidden'));     // show all CTAs
-                allHolders.forEach(holder => holder.classList.add('hidden'));  // hide all hidden sections
-
-                // 2) Open the clicked one
-                const parentLi = cta.closest('.service-info');
-                const hiddenSection = parentLi?.querySelector('.service-hidden');
-                if (hiddenSection) {
-                hiddenSection.classList.remove('hidden'); // show this one
-                cta.classList.add('hidden');              // hide its CTA if that's desired
-                }
-            });
-        });
-    </script>
-</body>
+    <?php include_once "./inc/footer.php"; ?>
+    </body>
 </html>

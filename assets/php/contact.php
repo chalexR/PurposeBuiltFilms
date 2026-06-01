@@ -1,8 +1,9 @@
 <?php
 // contact.php
+header('Content-Type: application/json');
 
 // Set your email
-$to = "adam@purposebuiltfilms.com, oliver@purposebuiltfilms.com";
+$to = "adam@purposebuiltfilms.com, info@purposebuiltfilms.com";
 $fromemail = "no-reply@purposebuiltfilms.com";
 
 // Get POST data safely

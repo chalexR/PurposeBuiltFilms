@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purpose Built Films - About Us</title>
+    <title>About Us — Purpose Built Films | Rewilding &amp; Wildlife Filmmakers Based in Bristol</title>
+    <meta name="description" content="Meet the team behind Purpose Built Films — Bristol-based rewilding and wildlife documentary filmmakers. Founded by Adam Laister, with credits for BBC, Netflix and National Geographic including Blue Planet 3.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://purposebuiltfilms.com/about.php">
+    <meta property="og:title" content="About Us — Purpose Built Films | Rewilding &amp; Wildlife Filmmakers, Bristol">
+    <meta property="og:description" content="Meet the Bristol-based team behind Purpose Built Films. Founded by Adam Laister, rewilding and wildlife documentary filmmaker with BBC, Netflix, and National Geographic credits.">
+    <meta property="og:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Purpose Built Films">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us — Purpose Built Films | Rewilding &amp; Wildlife Filmmakers, Bristol">
+    <meta name="twitter:description" content="Bristol-based rewilding and wildlife documentary filmmakers. Founded by Adam Laister, BBC/Netflix/National Geographic filmmaker, South West England.">
+    <meta name="twitter:image" content="https://purposebuiltfilms.com/assets/images/og-image.jpg">
 
     <!-- INCLUDE HEAD INFO -->
     <?php include_once "./inc/head.php"; ?>
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <!-- JSON-LD: Person (Adam Laister) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://purposebuiltfilms.com/about#adam-laister",
+        "name": "Adam Laister",
+        "jobTitle": "Founder and Director of Photography",
+        "description": "Wildlife and conservation filmmaker with 10 years of high-end broadcast documentary experience. Credits include productions for BBC, Netflix, and National Geographic, including Blue Planet 3.",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Purpose Built Films",
+            "url": "https://purposebuiltfilms.com"
+        },
+        "knowsAbout": ["wildlife filmmaking", "conservation documentary", "cinematography", "environmental science"],
+        "sameAs": [
+            "https://www.linkedin.com/in/adam-laister-48551331/",
+            "https://www.instagram.com/purposebuiltfilms/"
+        ]
+    }
+    </script>
 </head>
 <body class="parallax-wrapper">
     
@@ -48,7 +77,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-3 my-2">
                         <div class="card p-2 h-100 text-center">
-                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-adam-laister-art-director-camera-operator-bristol.webp" alt="Adam Laister" />
+                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-adam-laister-art-director-camera-operator-bristol.webp" alt="Adam Laister — rewilding and wildlife documentary filmmaker, founder of Purpose Built Films, Bristol" />
                             <h5 class="accent-hover">Adam Laister</h5>
                             <p>Founder and Director of Photography</p>
                             <p class="fs-9">Adam has a background in adventure and wildlife filmmaking, capturing footage for major broadcasters, working on flagship productions such as Blue Planet 3. His expertise spans across various camera systems, ranging from gimbals to underwater cinematography, aerial, long-lens, time-lapse, and the raw authenticity of handheld filming. He has a strong sense for composition and is always seeking new ways to tell a story with advancements of modern technology. Having filmed all over the globe, he thrives working in remote and challenging environments, but is just as happy filming in some woods or a wetland in the UK!</p>
@@ -56,7 +85,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 my-2">
                         <div class="card p-2 h-100 text-center">
-                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-nick-jone-art-director-camera-operator-bristol.webp" />
+                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-nick-jone-art-director-camera-operator-bristol.webp" alt="Nick Jones — Art Director and Camera Operator, nature and conservation film production, Bristol" />
                             <h5 class="accent-hover">Nick Jones</h5>
                             <p>Art Director and Camera Operator</p>
                             <p class="fs-9">Nick is a passionate and commercially driven creative with unwavering commitment to precision, consistency, and execution. With a Specialism in TV pitch deck design over the past 7 years and over 20 years of combined professional experience in design, film, animation, identity, print, digital and social for global brands. Nick thrives working on multiple projects, collaborating with colleagues and adjacent teams to present a full range of solutions. Personal ethos to push boundaries, crafting ideas into strategic and purposeful content. Award winning filmmaker, commercial diver and drone pilot, he has worked on development and productions for BBC, Sky, Netflix, Prime, Nat Geo and more.</p>
@@ -64,7 +93,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 my-2">
                         <div class="card p-2 h-100 text-center">
-                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-joey-haines-development-producer-bristol.webp" />
+                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-joey-haines-development-producer-bristol.webp" alt="Joey Haines — Development Producer and wildlife documentary filmmaker, Purpose Built Films, Bristol" />
                             <h5 class="accent-hover">Joey Haines</h5>
                             <p>Development Producer and Self shooting PD</p>
                             <p class="fs-9">Joey is an award winning filmmaker with strong editorial instincts and technical expertise. He is highly skilled in developing stories that meet client and channel needs, Joey has delivered content for major broadcasters and brands across linear and digital. He's known for clear communication and strong relationships with contributors and talent, Joey brings creativity, insight, and reliability to every production.</p>
@@ -72,7 +101,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 my-2">
                         <div class="card p-2 h-100 text-center">
-                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-georgie-maw-warner-rewilding-partner-bristol.webp" />
+                            <img class="service-image img-fluid rounded-pill mb-2" src="./assets/images/team-georgie-maw-warner-rewilding-partner-bristol.webp" alt="Georgie Maw Warner — Rewilding Partner and conservation filmmaker, Somerset and South West England" />
                             <h5 class="accent-hover">Georgie Maw Warner</h5>
                             <p>Rewilding Partner & On-Screen Collaborator</p>
                             <p class="fs-9">Georgie has a background in conservation biology and is currently rewilding her farm, just outside Bath, Somerset. She is passionate about nature restoration and this has connected her to many others on a similar journey. Her ambition is to visit other sites across the UK and further afield, to tell their story, learn more about the great work they are doing and the schemes they are using which can aid landowners to increase the biodiversity of their land, while maintaining a functioning farm.</p>
@@ -307,142 +336,6 @@
     </div>
 
     <!-- INCLUDE FOOTER FILE -->
-    <?php include_once "./inc/footer.php"; ?> 
-
-    <!-- JAVASCRIPT -->
-    <!-- SERVICE SECTION IMAGE COLOURISATION -->
-    <script>
-        function updateImageFilters() {
-            const images = document.querySelectorAll('.service-image');
-            const viewportHeight = window.innerHeight;
-            const viewportCenter = viewportHeight / 2;
-
-            images.forEach(image => {
-            const rect = image.getBoundingClientRect();
-            const imageCenter = rect.top + rect.height / 2;
-
-            // Distance from the image's center to viewport center
-            const distance = Math.abs(viewportCenter - imageCenter);
-
-            // Normalize the distance (0 = center, 1 = far away)
-            const maxDistance = viewportHeight / 2; // half screen height
-            const normalized = Math.min(distance / maxDistance, 1);
-
-            // Invert so 1 = center, 0 = far
-            const closeness = 1 - normalized;
-
-            // Calculate filter values
-            const grayscale = 1 - closeness; // 1 at far, 0 at center
-            const saturate = 1 + (closeness * 1); // 1 at far, up to 2.5 at center
-
-            image.style.filter = `grayscale(${grayscale}) saturate(${saturate})`;
-            });
-        }
-
-        window.addEventListener('scroll', updateImageFilters);
-        window.addEventListener('resize', updateImageFilters);
-        document.addEventListener('DOMContentLoaded', updateImageFilters);
-    </script>
-    <!-- BACKGROUND PARALLAX-->
-    <script>
-        const bg = document.querySelector('.parallax-bg');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const offset = scrollY * 0.15; // Adjust speed here (0.1 = slow, 1 = fast)
-            bg.style.transform = `translateY(${offset}px)`;
-        });
-    </script>
-    <!-- NAV BAR & HERO SCROLL BEHAVIOUR -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Detect internal vs external navigation ---
-            const referrer = document.referrer;
-            let isInternal = false;
-            try {
-                if (referrer) {
-                    isInternal = new URL(referrer).origin === location.origin;
-                }
-            } catch (error) {
-                console.warn("Could not parse referrer:", error);
-            }
-
-            // --- Element references ---
-            const navBar = document.querySelector('.nav-bar');
-            const heroShrink = document.querySelectorAll('.hero-shrink');
-            let lastScrollTop = 0;
-
-            // --- Core scroll handler ---
-            function handleScroll() {
-                const windowHeight = window.innerHeight;
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                // 🔹 HERO SHRINK EFFECT
-                let scrollPercent = 100 - ((scrollTop / windowHeight) * 600) + 85;
-                scrollPercent = Math.max(0, Math.min(100, scrollPercent));
-
-                heroShrink.forEach((hero) => {
-                    hero.style.fontSize = `${scrollPercent}%`;
-                    hero.style.opacity = `${scrollPercent}%`;
-                });
-
-                // 🔹 NAVBAR SCROLLED CLASS
-                if (scrollTop > 20 || isInternal) {
-                    navBar.classList.add('scrolled');
-                } else {
-                    navBar.classList.remove('scrolled');
-                }
-
-                // 🔹 NAVBAR HIDE / SHOW ON SCROLL DIRECTION
-                if (scrollTop > 100) {
-                    if (scrollTop > lastScrollTop) {
-                        // Scrolling down
-                        navBar.classList.add('nav-hidden');
-                    } else {
-                        // Scrolling up
-                        navBar.classList.remove('nav-hidden');
-                    }
-                } else {
-                    // Always show near the top
-                    navBar.classList.remove('nav-hidden');
-                }
-
-                lastScrollTop = Math.max(0, scrollTop);
-            }
-
-            // --- Run once on load + on scroll ---
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-        });
-    </script>
-    <!-- COLLAPSIBLE BOX BEHAVIOUR -->
-    <script>
-        const serviceCta = document.querySelectorAll('.service-cta');
-
-        serviceCta.forEach(cta => {
-            cta.addEventListener('click', e => {
-                // optional: if .service-cta is a link and you don't want navigation
-                e.preventDefault();
-
-                // find the container (scoped area) that groups these service items
-                const container = cta.closest('.collapse-holder') || document;
-
-                // 1) Close all items in the same container
-                const allButtons = container.querySelectorAll('.service-cta');
-                const allHolders = container.querySelectorAll('.service-hidden');
-
-                allButtons.forEach(btn => btn.classList.remove('hidden'));     // show all CTAs
-                allHolders.forEach(holder => holder.classList.add('hidden'));  // hide all hidden sections
-
-                // 2) Open the clicked one
-                const parentLi = cta.closest('.service-info');
-                const hiddenSection = parentLi?.querySelector('.service-hidden');
-                if (hiddenSection) {
-                hiddenSection.classList.remove('hidden'); // show this one
-                cta.classList.add('hidden');              // hide its CTA if that's desired
-                }
-            });
-        });
-    </script>
-</body>
+    <?php include_once "./inc/footer.php"; ?>
+    </body>
 </html>
